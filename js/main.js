@@ -144,7 +144,7 @@ var top250 = {
   getData: function (callback) {
     var _this = this
     $.ajax({
-      url: 'http://api.douban.com/v2/movie/top250',
+      url: 'https://api.douban.com/v2/movie/top250',
       type: 'GET',
       data: {
         start: this.index,
@@ -230,7 +230,7 @@ var NA = {
   },
   getData: function (callback) {
     $.ajax({
-      url: 'http://api.douban.com/v2/movie/us_box',
+      url: 'https://api.douban.com/v2/movie/us_box',
       type: 'GET',
       dataType: 'jsonp',
       jsonp: 'callback',
@@ -328,7 +328,7 @@ var search = {
     _this.isloading = true
     $('.loading').show()
     $.ajax({
-      url: 'http://api.douban.com/v2/movie/search',
+      url: 'https://api.douban.com/v2/movie/search',
       data: {
         q: _this.str,
         start: _this.index,
